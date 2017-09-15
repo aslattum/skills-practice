@@ -10,6 +10,7 @@ public class Plus_Minus_slattumwr{
 
           //Convert arg input into array of integers
           //1. loop through and grab each manually
+          //FINISH THIS
           int[] inputArray = new int[input1];
           for(int y = 0; y < input2.length(); y++){
                inputArray[y] = input2.substring(0, input2.indexOf(" "));
