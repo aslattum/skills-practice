@@ -10,16 +10,16 @@ public class Plus_Minus_aslattum {
 
     for (int i = 0; i < size; i++) {
       if (array[i] > 0) {
-        frac_pos += array[i];
+        frac_pos += 1.0;
       } else if (array[i] < 0) {
-        frac_neg += array[i];
+        frac_neg += 1.0;
       } else {
         // element is zero
-        frac_zero += array[i];
+        frac_zero += 1.0;
       }
     }
-    System.out.println(frac_pos/size);
-    System.out.println(frac_neg/size);
-    System.out.println(frac_zero/size);
+    System.out.println(String.format("%.6f", frac_pos/size));
+    System.out.println(String.format("%.6f", frac_neg/size));
+    System.out.println(String.format("%.6f", frac_zero/size));
   }
 }
